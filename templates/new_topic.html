@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+
+
+{% block title %} Start a New Topic {% endblock %}
+
+{% block breadcrumb %}
+ <li class = 'breadcrumb-item'><a href= "{% url 'home' %}">Boards</a></li>
+ <li class = 'breadcrumb-item'><a href = "{% url 'board_topics' board.pk %}">{{board.name}}</a></li>
+ <li class = "breadcrumb-item active">New Topic</li>
+{% endblock %}
+
+{% block content %}
+  <form method="post" enctype="multipart/form-data" novalidate>
+    {% csrf_token %}
+    {% include 'includes/form.html' %}
+  
+    {% if user.is_authenticated %}
+    <button type ="submit" class='btn btn-success'>Upload</button>
+    {% endif %}
+    
+
+  </form>
+{% endblock %}

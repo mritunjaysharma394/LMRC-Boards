@@ -1,0 +1,53 @@
+/* Program to find factorial of a function using concept of a newly defnied function */
+
+#include<stdio.h>
+#include<conio.h>
+void fact();
+void main()
+{
+  clrscr();
+  fact();
+  getch();
+}
+void fact()
+{
+ int i,m,fact=1;
+ printf("\nEnter a number : ");
+ scanf("%d",&i);
+ m=i;
+ while(i!=0)
+ {
+  fact=fact*i;
+  i--;
+ }
+ printf("\n Factorial of %d is %d.",m,fact);
+}
+
+
+	 Output :
+
+
+Enter a number : 7                                                              
+                                                                                
+ Factorial of 7 is 5040.                                                        
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                

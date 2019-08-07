@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="{% static 'css/accounts.css' %}">
+{% endblock %}
+
+{% block body %}
+  <div class="container">
+  	<img alt="LMRCL" class="lmrc_logo" src="https://lmrcl.com/front-end/img/lmrc_logo.png" style="display:block; margin-left: auto; margin-right: auto;">
+    <h1 class="text-center logo my-4">
+      <a href="{% url 'home' %}">LMRC Boards</a>
+    </h1>
+    {% block content %}
+    {% endblock %}
+  </div>
+{% endblock %}
