@@ -56,4 +56,4 @@ Add a new Board (name it 'Notice Board') under Boards in the admin page.
 
 Reload **127.0.0.1:8000**.
 
-Note use ```bash python3``` if ```bash python``` is not working.
+Note use ```python3``` if ```python``` is not working.
