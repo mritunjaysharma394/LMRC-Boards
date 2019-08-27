@@ -15,13 +15,19 @@ Install the requirements:
 pip install -r requirements.txt
 ```
 
-Setup the local configurations:
-
-```bash
-cp .env .env
-```
 
 Create the database:
+
+```bash
+python manage.py migrate
+```
+Create the Super User:
+
+```bash
+python manage.py createsuperuser
+```
+
+Migrate again
 
 ```bash
 python manage.py migrate
@@ -34,3 +40,10 @@ python manage.py runserver
 ```
 
 The project will be available at **127.0.0.1:8000**.
+
+Go to admin Page **127.0.0.1:8000/admin**.
+
+Add a new Board under Boards in the admin page
+
+Reload **127.0.0.1:8000**.
+
