@@ -3,7 +3,7 @@ A Notice Board in development for Lucknow Metro Railway Corporation
 
 ## Running the Project Locally
 
-First, clone the repository to your local machine:
+First,clone the repository to your local machine:
 
 ```bash
 git clone git@github.com:sibtc/django-beginners-guide.git
