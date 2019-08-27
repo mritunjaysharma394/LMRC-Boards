@@ -11,7 +11,8 @@ git clone https://github.com/mritunjaysharma394/LMRC-Boards.git
 ```
 Change the directory to LMRC-Boards
 
-``` cd LMRC-Boards
+``` bash
+cd LMRC-Boards
 ```
 
 Install the requirements:
