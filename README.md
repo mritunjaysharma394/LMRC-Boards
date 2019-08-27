@@ -51,7 +51,7 @@ Go to admin Page **127.0.0.1:8000/admin**.
 
 Sign in using the username and password you created.
 
-Add a new Board (name it like 'Notice Board' under Boards in the admin page.
+Add a new Board (name it 'Notice Board') under Boards in the admin page.
 
 Reload **127.0.0.1:8000**.
 
