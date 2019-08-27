@@ -1,5 +1,6 @@
 # LMRC-Boards
-A Notice Board in development for Lucknow Metro Railway Corporation
+A Notice Board in development for Lucknow Metro Railway Corporation. 
+Developed for uploading and deleting documents. 
 
 ## Running the Project Locally
 
@@ -7,6 +8,10 @@ First,clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/mritunjaysharma394/LMRC-Boards.git
+```
+Change the directory to LMRC-Boards
+
+``` cd LMRC-Boards
 ```
 
 Install the requirements:
@@ -26,6 +31,7 @@ Create the Super User:
 ```bash
 python manage.py createsuperuser
 ```
+Write your username and password that shall be used for admin page.
 
 Migrate again
 
@@ -43,7 +49,9 @@ The project will be available at **127.0.0.1:8000**.
 
 Go to admin Page **127.0.0.1:8000/admin**.
 
-Add a new Board under Boards in the admin page
+Sign in using the username and password you created.
+
+Add a new Board (name it like 'Notice Board' under Boards in the admin page.
 
 Reload **127.0.0.1:8000**.
 
