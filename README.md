@@ -6,7 +6,7 @@ A Notice Board in development for Lucknow Metro Railway Corporation
 First,clone the repository to your local machine:
 
 ```bash
-git clone git@github.com:sibtc/django-beginners-guide.git
+git clone https://github.com/mritunjaysharma394/LMRC-Boards.git
 ```
 
 Install the requirements:
