@@ -11,8 +11,9 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-from couple import config,Csv
+from decouple import config,Csv
 import dj_database_url
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -25,8 +26,10 @@ SECRET_KEY = 'rcqacto6fvia$m+0^yi*r#cp_@(h6pd38c391m=!%0zvq#!23@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+localhost = '127.0.0.1'
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = [localhost,'127.0.0.1']
 
 
 # Application definition
@@ -75,12 +78,20 @@ WSGI_APPLICATION = 'lmrc_board.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {
+'''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+}'''
+
+DATABASES = {
+    'default': dj_database_url.config(
+        default=config('DATABASE_URL')
+    )
 }
+
+
 
 
 # Password validation
